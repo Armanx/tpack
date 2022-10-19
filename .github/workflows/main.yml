@@ -22,6 +22,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@armanx'
       
-      - run: npm publish
+      - run: npm unpublish @armanx/tpack/tpack@1.0.0 
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
